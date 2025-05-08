@@ -1,15 +1,17 @@
-a_string = "hello World"
+import string as str
 
 
+# All lower case letters
+print(",".join(str.ascii_lowercase))
 
-str_capitalize = a_string.capitalize()
+# All Upper case letters
+print(",".join(str.ascii_uppercase))
 
+# Both lower and upper letters
+print(",".join(str.ascii_letters))
 
+# Digits only
+print(",".join(str.digits))
 
-
-str_case_fold = a_string.casefold()
-
-
-print(id(a_string))
-
-print(id(str_case_fold))
+# Punctuations
+print(",".join(str.punctuation))
